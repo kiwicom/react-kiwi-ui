@@ -49,3 +49,4 @@ tl
 Toman
 viewport
 Vueling
+grayscale
