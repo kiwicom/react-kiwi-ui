@@ -1,0 +1,24 @@
+// @flow
+
+/*
+  DOCUMENTATION: https://orbit.kiwi/components/itinerary/
+*/
+
+import * as React from "react";
+
+import typeof ItineraryPartComponent from "./ItineraryPart";
+import typeof ItineraryPartPlaceComponent from "./ItineraryPart/ItineraryPartPlace";
+import typeof ItineraryPartDetailComponent from "./ItineraryPart/ItineraryPartDetail";
+import type { Globals } from "../common/common.js.flow";
+import type { spaceAfter } from "../common/getSpacingToken";
+
+export type Props = {|
+  ...Globals,
+  ...spaceAfter,
+  +children: React.Node,
+|};
+
+declare export var ItineraryPart: ItineraryPartComponent;
+declare export var ItineraryPartPlace: ItineraryPartPlaceComponent;
+declare export var ItineraryPartDetail: ItineraryPartDetailComponent;
+declare export default React.ComponentType<Props>;
